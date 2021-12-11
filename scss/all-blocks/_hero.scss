@@ -1,5 +1,5 @@
 .body {
-    background-image: url("../images/svg/hero/circle.svg");
+    background-image: url("../images/svg/circle.svg");
     background-size: 780px;
     background-repeat: no-repeat;
     background-position: right calc(50% - 450px) top -180px;
@@ -48,10 +48,9 @@
 
 @media only screen and(max-width: 768px) {
     .body {
-        background-image: url("../images/svg/hero/circle.svg");
         background-size: 950px;
         background-repeat: no-repeat;
-        background-position: right 50% top -650px;
+        background-position: right 50% top -670px;
     }
 
     .hero .container {
@@ -99,7 +98,7 @@
 @media only screen and(max-width: 485px) {
     .body {
         background-size: 780px;
-        background-position: right 50% top -520px;
+        background-position: right 50% top -550px;
     }
 
     .hero .container {
