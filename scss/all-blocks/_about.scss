@@ -1,0 +1,50 @@
+.about {
+    background-color: $mirage-blue;
+    color: $water-white;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.about__heading {
+    margin-bottom: 24px;
+}
+
+.about__text {
+    max-width: 445px;
+    width: 100%;
+    margin-bottom: 32px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+.about__link {
+    display: block;
+    width: 130px;
+    padding: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    border: 1px solid $water-white;
+    border-radius: 24px;
+}
+
+.about__item__image {
+    object-fit: contain;
+}
+
+.about__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

@@ -85,6 +85,7 @@
     .hero__link {
         margin: 0;
         text-align: center;
+        line-height: 18px;
     }
 }
 
@@ -130,7 +131,7 @@
 }
 
 @media only screen and(max-width: 356px) {
-    .hero__heading{
+    .hero__heading {
         font-size: 28px;
     }
 }
