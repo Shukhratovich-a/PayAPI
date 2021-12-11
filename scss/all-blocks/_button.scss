@@ -1,0 +1,22 @@
+.button {
+    display: block;
+    width: 173px;
+    padding: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+    color: $water-white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: $dark-pink;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color $transition;
+
+    &:hover {
+        background-color: $charm-pink;
+    }
+}
