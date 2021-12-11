@@ -1,0 +1,137 @@
+.body {
+    background-image: url("../images/svg/hero/circle.svg");
+    background-size: 780px;
+    background-repeat: no-repeat;
+    background-position: right calc(50% - 450px) top -180px;
+}
+
+.hero .container {
+    margin-bottom: 75px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1015px;
+    padding-top: 74px;
+}
+
+.hero__heading {
+    max-width: 545px;
+    margin-bottom: 50px;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.hero__form {
+    margin-bottom: 16px;
+}
+
+.hero__link {
+    margin-bottom: 0;
+    margin-left: 27px;
+    opacity: 0.7;
+    a {
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@media only screen and(max-width: 910px) {
+    .hero__heading {
+        max-width: 490px;
+        font-size: 60px;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .body {
+        background-image: url("../images/svg/hero/circle.svg");
+        background-size: 950px;
+        background-repeat: no-repeat;
+        background-position: right 50% top -650px;
+    }
+
+    .hero .container {
+        margin-bottom: 100px;
+    }
+
+    .hero__image {
+        width: 160px;
+        height: 300px;
+        margin-bottom: 48px;
+    }
+
+    .hero__inner {
+        flex-direction: column-reverse;
+        padding-top: 48px;
+    }
+
+    .hero__heading {
+        max-width: 575px;
+        margin-bottom: 22px;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.369231px;
+    }
+
+    .hero__form {
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .hero__link {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and(max-width: 540px) {
+    .hero__heading {
+        max-width: 450px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and(max-width: 485px) {
+    .body {
+        background-size: 780px;
+        background-position: right 50% top -520px;
+    }
+
+    .hero .container {
+        margin-bottom: 80px;
+    }
+
+    .hero__inner {
+        padding-top: 32px;
+    }
+
+    .hero__image {
+        width: 127px;
+        height: 240px;
+        margin-bottom: 24px;
+    }
+
+    .hero__heading {
+        max-width: 327px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.246154px;
+    }
+
+    .hero__form {
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and(max-width: 356px) {
+    .hero__heading{
+        font-size: 28px;
+    }
+}
