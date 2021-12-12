@@ -20,4 +20,8 @@
     &:hover {
         background-color: $charm-pink;
     }
+
+    &:disabled{
+        opacity: 0.5;
+    }
 }
