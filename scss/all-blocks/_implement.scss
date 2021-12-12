@@ -1,5 +1,5 @@
 .implement .container {
-    margin-bottom: 150px;
+    margin-bottom: 10px;
 }
 
 .implement__inner {
@@ -27,6 +27,12 @@
     font-size: 15px;
     line-height: 28px;
     color: $light-juan-blue;
+}
+
+@media only screen and(max-width: 920px) {
+    .implement .container {
+        margin-bottom: 150px;
+    }
 }
 
 @media only screen and(max-width: 905px) {
@@ -64,7 +70,7 @@
         line-height: 36px;
     }
 
-    .implement__text{
+    .implement__text {
         max-width: 330px;
     }
 }
