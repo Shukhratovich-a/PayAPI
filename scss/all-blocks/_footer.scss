@@ -1,0 +1,51 @@
+.footer {
+    background-color: $mirage-blue;
+    background-image: url("../images/svg/circle.svg");
+    background-repeat: no-repeat;
+    background-size: 780px;
+    background-position: right calc(50% - 730px) top -150px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    padding: 31px 20px;
+}
+
+@media only screen and(max-width: 1150px) {
+    .footer {
+        background-position: right -550px top -150px;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .footer {
+        background-position: right calc(50% - 390px) top -150px;
+    }
+
+    .footer__logo {
+        margin-right: 64px;
+    }
+}
+
+@media only screen and(max-width: 700px) {
+    .footer__logo {
+        margin: 0;
+    }
+}
+
+@media only screen and(max-width: 600px) {
+    .footer {
+        background-position: right 50% bottom -603px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        padding-top: 41px;
+        padding-bottom: 55px;
+    }
+
+    .footer__logo {
+        margin-bottom: 40px;
+    }
+}
