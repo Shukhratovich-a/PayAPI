@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 150px;
     padding: 100px 20px;
 }
 
@@ -42,7 +43,7 @@
     border-radius: 24px;
     transition: background-color $transition, color $transition;
 
-    &:hover{
+    &:hover {
         background-color: $water-white;
         color: $juan-blue;
     }
@@ -70,6 +71,7 @@
 
     .about .container {
         flex-direction: column-reverse;
+        margin-bottom: 100px;
         padding: 88px 20px;
     }
 
@@ -93,7 +95,12 @@
 }
 
 @media only screen and(max-width: 550px) {
+    .about {
+        background-position: left 50% top -600px;
+    }
+
     .about .container {
+        margin-bottom: 80px;
         padding: 80px 20px;
     }
 
