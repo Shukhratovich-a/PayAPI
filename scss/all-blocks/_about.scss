@@ -1,6 +1,10 @@
 .about {
-    background-color: $mirage-blue;
     color: $water-white;
+    background-color: $mirage-blue;
+    background-image: url("../images/svg/circle.svg");
+    background-repeat: no-repeat;
+    background-size: 780px;
+    background-position: left calc(50% - 570px) bottom 50px;
 }
 
 .about .container {
@@ -10,13 +14,16 @@
     padding: 100px 20px;
 }
 
+.about__inner {
+    margin-right: 24px;
+}
+
 .about__heading {
     margin-bottom: 24px;
 }
 
 .about__text {
-    max-width: 445px;
-    width: 100%;
+    width: 445px;
     margin-bottom: 32px;
     line-height: 28px;
     opacity: 0.7;
@@ -33,18 +40,83 @@
     color: inherit;
     border: 1px solid $water-white;
     border-radius: 24px;
+    transition: background-color $transition, color $transition;
+
+    &:hover{
+        background-color: $water-white;
+        color: $juan-blue;
+    }
+}
+
+.about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 535px;
+    row-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .about__item__image {
     object-fit: contain;
 }
 
-.about__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 60px;
-    row-gap: 40px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+@media only screen and(max-width: 990px) {
+    .about {
+        background-position: left 50% top -550px;
+    }
+
+    .about .container {
+        flex-direction: column-reverse;
+        padding: 88px 20px;
+    }
+
+    .about__list {
+        margin-bottom: 64px;
+    }
+
+    .about__inner {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about__text {
+        max-width: 455px;
+        width: 100%;
+    }
+
+    .about__link {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and(max-width: 550px) {
+    .about .container {
+        padding: 80px 20px;
+    }
+
+    .about__list {
+        max-width: 280px;
+        margin-bottom: 56px;
+    }
+
+    .about__item__image {
+        width: 120px;
+        height: 27px;
+    }
+
+    .about__heading {
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.246154px;
+    }
+
+    .about__text {
+        max-width: 330px;
+        margin-bottom: 60px;
+    }
 }
