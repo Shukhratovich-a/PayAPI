@@ -6,22 +6,22 @@
     list-style-type: none;
 }
 
-.social{
-    &+&{
+.social {
+    & + & {
         margin-left: 24px;
     }
 }
 
-.social__link{
+.social__link {
     color: $water-white;
     transition: color $transition;
 
-    &:hover{
+    &:hover {
         color: $charm-pink;
     }
 }
 
-.social__icon{
+.social__icon {
     display: block;
     object-fit: contain;
 }
