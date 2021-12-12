@@ -1,0 +1,81 @@
+.implement .container {
+    margin-bottom: 150px;
+}
+
+.implement__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1015px;
+}
+
+.implement__image {
+    width: 392px;
+    height: 250px;
+    margin-right: 32px;
+    border-radius: 8px;
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+}
+
+.implement__heading {
+    margin-bottom: 24px;
+}
+
+.implement__text {
+    max-width: 445px;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 28px;
+    color: $light-juan-blue;
+}
+
+@media only screen and(max-width: 905px) {
+    .implement .container {
+        margin-bottom: 100px;
+    }
+
+    .implement__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .implement__image {
+        margin-right: 0;
+        margin-bottom: 48px;
+    }
+
+    .implement__text {
+        max-width: 575px;
+    }
+}
+
+@media only screen and(max-width: 432px) {
+    .implement .container {
+        margin-bottom: 80px;
+    }
+
+    .implement__image {
+        width: 328px;
+        height: 210px;
+    }
+
+    .implement__heading {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .implement__text{
+        max-width: 330px;
+    }
+}
+
+@media only screen and(max-width: 368px) {
+    .implement__image {
+        width: 280px;
+        height: 178px;
+    }
+
+    .implement__heading {
+        font-size: 32px;
+    }
+}
