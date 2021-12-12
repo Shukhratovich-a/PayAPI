@@ -1,0 +1,33 @@
+.start .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+}
+
+.start__heading {
+    margin: 0;
+}
+
+@media only screen and(max-width: 880px) {
+    .start .container {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .start__heading {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .start .container {
+        margin-bottom: 80px;
+    }
+
+    .start__heading {
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
